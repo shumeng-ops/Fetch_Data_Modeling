@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: source_data
+    database: fetch_db
+    schema: fetch_schema
+    tables:
+      - name: brands_json
+        # columns:
+        #   - name: o_orderkey
+        #     tests: 
+        #       - unique 
+        #       - not_null
+      - name: receipts_json
+      - name: users_json
+        # columns: 
+        #   - name: l_orderkey
+        #     tests:
+        #       - relationships:
+        #           to: source('tpch','orders')
+        #           field: o_orderkey
