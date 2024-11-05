@@ -10,7 +10,7 @@ This repository contains my submission for Fetch’s take-home challenge for the
 
 Before diving into the analysis, the initial setup involves creating a dedicated Snowflake warehouse, database, schema, role, and assigning necessary permissions for this project. After completing these steps, set up an external Snowflake stage pointing to the S3 bucket and load the three source JSON files from S3 into a Snowflake JSON table.
 
-You can find the code for these steps [here](set_up_snowflake.sql).
+You can find the code for these steps [here](set_up_snowflake.sql).<br><br>
 
 📍📍**First Section: Relational Data Model Diagram**<br><br>
 I decided to expand the rewardsReceiptItemList array column into a separate table called receipts_item, where each row represents an individual item on a receipt. I created a surrogate key called receipts_items_key as the primary key. This structure not only makes it easier to join tables for insights but also improves datawarehouse scalability.
@@ -24,10 +24,10 @@ The code to create the staging tables from JSON format can be found in the stagi
 - [receipts_items](models/staging/stg_receipts_items.sql)
 
 Click [here](Fetch%20Data%20Model%20ERD.png) to view a larger version of the ERD.
-![Fetch ERD](Fetch%20Data%20Model%20ERD.png)
+![Fetch ERD](Fetch%20Data%20Model%20ERD.png)<br><br>
 
-📍📍**Second Section: Queries to answers predetermined questions**
+📍📍**Second Section: Queries to answers predetermined questions**<br><br>
 - What are the top 5 brands by receipts scanned for most recent month?
 - How does the ranking of the top 5 brands by receipts scanned for the recent month compare to the ranking for the previous month?
 
-To address the questions above, I created a data mart named [top5_brands_scanned_monthly](models/marts/top5_brands_scanned_monthly.sql) to monitor the top 5 brands according to the number of scanned receipts each month. This is a common use case, and by structuring it as a data mart, we ensure that the table can easily provide the top 5 brands for any chosen month.
+To address the questions above, I created a data mart named [top5_brands_scanned_monthly](models/marts/top5_brands_scanned_monthly.sql) to monitor the top 5 brands according to the number of scanned receipts each month. This is a common use case, and by structuring it as a data mart, we ensure that the table can easily provide the top 5 brands for any chosen month.<br><br>
