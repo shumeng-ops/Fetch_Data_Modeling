@@ -32,3 +32,5 @@ Click [here](Fetch%20Data%20Model%20ERD.png) to view a larger version of the ERD
 - How does the ranking of the top 5 brands by receipts scanned for the recent month compare to the ranking for the previous month?
 
 To address the questions above, I created a data mart named [top5_brands_scanned_monthly](models/marts/top5_brands_scanned_monthly.sql) to monitor the top 5 brands according to the number of scanned receipts each month. This is a common use case, and by structuring it as a data mart, we ensure that the table can easily provide the top 5 brands for any chosen month.<br><br>
+
+📍📍**Third Section: Data Quality Evaluation**<br><br>
