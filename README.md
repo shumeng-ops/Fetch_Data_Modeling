@@ -17,4 +17,5 @@ I decided to expand the rewardsReceiptItemList array column into a separate tabl
 
 There isn’t a straightforward foreign key for linking brands to each item in receipts_item. Several columns could potentially serve as a key for joining with the brands table, such as barcode, brandcode, and itemNumber. After reviewing these options and comparing their values, brandcode appears to provide the most consistent match between brands and receipt items. Based on this analysis, I decided to use brandcode as the key for connecting brands with receipts_item.
 
+Click [here]() to view a larger version of the ERD.
 ![Fetch ERD](Fetch%20Data%20Model%20ERD.png)
