@@ -24,7 +24,8 @@ The code to create the staging tables from JSON format can be found in the stagi
 - [receipts_items](models/staging/stg_receipts_items.sql)
 
 Click [here](Fetch%20Data%20Model%20ERD.png) to view a larger version of the ERD.
-![Fetch ERD](Fetch%20Data%20Model%20ERD.png)<br><br>
+![Fetch ERD](Fetch%20Data%20Model%20ERD.png)
+<br><br>
 
 📍📍**Second Section: Queries to answers predetermined questions**<br><br>
 - What are the top 5 brands by receipts scanned for most recent month?
