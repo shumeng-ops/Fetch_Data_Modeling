@@ -6,8 +6,10 @@ This repository contains my submission for Fetch’s take-home challenge for the
 - **Snowflake**: Used as the data warehouse
 - **DBT**: Built the data models that populate the data warehouse<br><br>
 
-📍 **Prerequisites: Setting Up Snowflake Environment and Loading Source Data from AWS S3**<br><br>
+📍📍 **Prerequisites: Setting Up Snowflake Environment and Loading Source Data from AWS S3**<br><br>
 
 Before diving into the analysis, the initial setup involves creating a dedicated Snowflake warehouse, database, schema, role, and assigning necessary permissions for this project. After completing these steps, set up an external Snowflake stage pointing to the S3 bucket and load the three source JSON files from S3 into a Snowflake JSON table.
 
 You can find the code for these steps [here](set_up_snowflake.sql).
+
+📍📍**First Section: Relational Data Model Diagram**<br><br>
