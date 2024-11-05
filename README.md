@@ -15,13 +15,18 @@ You can find the code for these steps [here](set_up_snowflake.sql).
 📍📍**First Section: Relational Data Model Diagram**<br><br>
 I decided to expand the rewardsReceiptItemList array column into a separate table called receipts_item, where each row represents an individual item on a receipt. I created a surrogate key called receipts_items_key as the primary key. This structure not only makes it easier to join tables for insights but also improves datawarehouse scalability.
 
-Several columns potentially serve as a key for joining receipts_item with the brands table, such as barcode, brandcode, and itemNumber. After reviewing these options and comparing their values, brandcode appears to provide the most consistent match between brands and receipt items. Based on this analysis, I decided to use brandcode as the key for connecting brands with receipts_item.<br><br>
+Several columns potentially serve as a key for joining receipts_item with the brands table, such as barcode, brandcode, and itemNumber. After reviewing these options and comparing their values, brandcode appears to provide the most consistent match between brands and receipt items. Based on this analysis, I decided to use brandcode as the key for connecting brands with receipts_item.
 
-The code to create the staging tables from JSON format can be found in the staging folders; please refer to the link below.<br><br>
-- [Users](models/staging/stg_users.sql)
+The code to create the staging tables from JSON format can be found in the staging folders; please refer to the link below.
+- [users](models/staging/stg_users.sql)
 - [brands](models/staging/stg_brands.sql)
 - [receipts](models/staging/stg_receipts.sql)
-- [receipts_items](models/staging/stg_receipts_items.sql)<br><br>
+- [receipts_items](models/staging/stg_receipts_items.sql)
 
 Click [here](Fetch%20Data%20Model%20ERD.png) to view a larger version of the ERD.
 ![Fetch ERD](Fetch%20Data%20Model%20ERD.png)
+
+📍📍**Second Section: Queries to answers predetermined questions**<br><br>
+The questions I chose to answer are:
+- What are the top 5 brands by receipts scanned for most recent month?
+- How does the ranking of the top 5 brands by receipts scanned for the recent month compare to the ranking for the previous month?
