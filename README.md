@@ -13,3 +13,6 @@ Before diving into the analysis, the initial setup involves creating a dedicated
 You can find the code for these steps [here](set_up_snowflake.sql).
 
 📍📍**First Section: Relational Data Model Diagram**<br><br>
+I decided to expand the rewardsReceiptItemList array column into a separate table called receipts_item, where each row represents an individual item on a receipt. I created a surrogate key called receipts_items_key as the primary key. By creating a dedicated table, I can better capture valuable details about each item, such as price, points, user flags, and review status. This structure not only makes it easier to join tables for insights but also improves datawarehouse scalability.
+
+There isn’t a straightforward foreign key for linking brands to each item in receipts_item. Several columns could potentially serve as a key for joining with the brands table, such as barcode, brandcode, and itemNumber. After reviewing these options and comparing their values, brandcode appears to provide the most consistent match between brands and receipt items. Based on this analysis, I decided to use brandcode as the key for connecting brands with receipts_item.
