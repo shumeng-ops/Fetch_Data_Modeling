@@ -10,4 +10,4 @@ This repository contains my submission for Fetch’s take-home challenge for the
 ### Prerequisites: Setting Up Snowflake Environment and Loading Source Data from AWS S3
 Before diving into the analysis, the initial setup involves creating a dedicated Snowflake warehouse, database, schema, role, and assigning necessary permissions for this project. After completing these steps, set up an external Snowflake stage pointing to the S3 bucket and load the three source JSON files from S3 into a Snowflake JSON table.
 
-You can find the code for these steps here.
+You can find the code for these steps [here](set_up_snowflake.sql).
