@@ -27,6 +27,7 @@ Click [here](Fetch%20Data%20Model%20ERD.png) to view a larger version of the ERD
 ![Fetch ERD](Fetch%20Data%20Model%20ERD.png)
 
 📍📍**Second Section: Queries to answers predetermined questions**<br><br>
-The questions I chose to answer are:
 - What are the top 5 brands by receipts scanned for most recent month?
 - How does the ranking of the top 5 brands by receipts scanned for the recent month compare to the ranking for the previous month?
+
+To answer the above questions, I created a data mart called [top5_brands_scanned_monthly](models/marts/top5_brands_scanned_monthly.sql) to track the top 5 brands based on the number of scanned receipts each month. This common use case allows us to easily determine the top 5 brands for any selected month using this table.
