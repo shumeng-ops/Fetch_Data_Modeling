@@ -38,4 +38,15 @@ To address the questions above, I created a data mart named [top5_brands_scanned
 📍📍**Third Section: Data Quality Evaluation**<br><br>
 You can find the Jupyter notebook [here](Fetch_Data_Quality_Checks.ipynb), which includes code and functions to identify data issues and a summary of findings across all three tables. In this step, I created two reusable functions to calculate the percentage of unique values and null values for any given DataFrame and columns. I also checked for inconsistencies within tables, such as cases where the purchased item count is greater than 0, but the item list is null.<br><br>
 
-📍📍**Forth Section: Communication with Stakeholders**<br><br>
+📍📍**Fourth Section: Communication with Stakeholders**<br><br>
+
+**Subject: Quick Check-In on Some Data Findings**
+
+Hi [Stakeholder’s Name],
+
+I hope you’re doing well! I’m Shumeng, the analytics engineer on the [Team Name] team. As I reviewed some of our datasets, I noticed a few patterns that raised some questions, and I wanted to reach out for your insights.
+
+While there are a few potential data quality issues—like duplicated User IDs, which I’ll be discussing with our engineering team—there are also a few areas where I think business context could help clarify what I’m seeing. If you have a moment, I’d love to connect and get your perspective.
+
+1. When users first sign up with Fetch, is “State” a required field? I’m noticing quite a few records where the State field is blank, and I’m wondering if this field might be optional during sign-up
+2. I noticed some records where the sign-up source is marked as null. Typically, I see “Email” or “Google” as the sources, but I’m curious if other methods—like phone number, Facebook, or any others—are also available and could explain these null values.
