@@ -44,12 +44,14 @@ You can find the Jupyter notebook [here](Fetch_Data_Quality_Checks.ipynb), which
 
 Hi [Stakeholder’s Name],
 
-I hope you’re doing well! I’m Shumeng, the analytics engineer on the [Team Name] team. As I reviewed some of our datasets, I noticed a few patterns that raised some questions, and I wanted to reach out for your insights.
+I hope you’re doing well! I’m Shumeng, the analytics engineer on the [Team Name] team. As I reviewed some of our datasets, I came across a few areas where I could use your insights.
 
-While there are a few potential data quality issues—like duplicated User IDs, which I’ll be discussing with our engineering team—there are also a few areas where I think business context could help clarify what I’m seeing. If you have a moment, I’d love to connect and get your perspective.
+While there are a few potential data quality issues—like duplicated User IDs, which I’ll be discussing with our engineering team—there are also a few areas where I think business context could help clarify what I’m seeing. 
 
 1. When users first sign up with Fetch, is “State” a required field? I’m noticing quite a few records where the State field is blank, and I’m wondering if this field might be optional during sign-up
 2. What are the available sign-up sources for Fetch users? I currently see “Email,” “Google,” and some null values, so I’m wondering if the nulls might represent another sign-up method.
 3. For our brand records, what serves as the unique identifier? Is it the barcode or the brand code? Currently, neither appears to be unique for each brand ID. Additionally, there are many items in the receipts table with barcodes or brand codes that don’t exist in our brand table. This lack of completeness in our brand data could create challenges in data analysis.
 4. What are the rules for rewarding points for scanned receipts? I noticed that some receipts marked as “rejected” still show points awarded. Is that expected?
 5. Could you please explain the different stages of a receipt? I see stages like “submitted,” “pending,” “finished,” “flagged,” and “rejected.” Specifically, what does “finished” mean, and what’s the difference between “submitted” and “pending”?
+
+I know this is quite a few questions in one email, so please let me know if it would be easier to discuss them over a call. Your insights will help us improve our data quality, enabling us to perform higher-quality analysis and provide more valuable business insights.
