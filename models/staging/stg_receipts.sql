@@ -2,7 +2,7 @@ select
     json_data:_id:"$oid"::string as id,
     json_data:bonusPointsEarned::number as bonusPointsEarned,
     json_data:bonusPointsEarnedReason::string as bonusPointsEarnedReason,
-    to_timestamp(json_data:createdDate:"$date"::number / 1000) as createdDate,
+    to_timestamp(json_data:createDate:"$date"::number / 1000) as createDate,
     to_timestamp(json_data:dateScanned:"$date"::number / 1000) as dateScanned,
     to_timestamp(json_data:finishedDate:"$date"::number / 1000) as finishedDate,
     to_timestamp(json_data:modifyDate:"$date"::number / 1000) as modifyDate,
