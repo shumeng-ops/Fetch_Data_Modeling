@@ -5,7 +5,7 @@ This repository contains my submission for Fetch’s take-home challenge for the
 - **AWS S3 Bucket**: Stored JSON files for receipts, users, and brands
 - **Snowflake**: Used as the data warehouse
 - **DBT**: Built the data models that populate the data warehouse
-- **Python** Evaluate Data Quality Issue 
+- **Python**: Evaluate Data Quality Issue 
 <br><br>
 
 📍📍 **Prerequisites: Setting Up Snowflake Environment and Loading Source Data from AWS S3**<br><br>
