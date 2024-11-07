@@ -54,7 +54,7 @@ While there are a few potential data quality issues—like duplicated User IDs, 
 4. What are the rules for rewarding points for scanned receipts? I noticed that some receipts marked as “rejected” still show points awarded. Is that expected?
 5. Could you please explain the different stages of a receipt? I see stages like “submitted,” “pending,” “finished,” “flagged,” and “rejected.” Specifically, what does “finished” mean, and what’s the difference between “submitted” and “pending”?
 
-I realize this is quite a bit to cover in one email, so if it’s more convenient, I’d be happy to discuss these questions over a call. Your insights would be incredibly helpful in improving our data quality, which will ultimately allow us to deliver more accurate analysis and valuable business insights. Thank you!
+I realize this is quite a bit to cover in one email, so if it’s more convenient, I’d be happy to discuss these questions over a call. Your insights would be incredibly helpful in improving our data quality, which will ultimately allow us to deliver more accurate analysis and valuable business insights. Thank you!<br><br>
 
-Best Regards,
+Best Regards,<br><br>
 Shumeng Shi
