@@ -4,7 +4,9 @@ This repository contains my submission for Fetch’s take-home challenge for the
 
 - **AWS S3 Bucket**: Stored JSON files for receipts, users, and brands
 - **Snowflake**: Used as the data warehouse
-- **DBT**: Built the data models that populate the data warehouse<br><br>
+- **DBT**: Built the data models that populate the data warehouse
+- **Python** Evaluate Data Quality Issue 
+<br><br>
 
 📍📍 **Prerequisites: Setting Up Snowflake Environment and Loading Source Data from AWS S3**<br><br>
 
@@ -34,3 +36,6 @@ Click [here](Fetch%20Data%20Model%20ERD.png) to view a larger version of the ERD
 To address the questions above, I created a data mart named [top5_brands_scanned_monthly](models/marts/top5_brands_scanned_monthly.sql) to monitor the top 5 brands according to the number of scanned receipts each month. This is a common use case, and by structuring it as a data mart, we ensure that the table can easily provide the top 5 brands for any chosen month.<br><br>
 
 📍📍**Third Section: Data Quality Evaluation**<br><br>
+You can find the Jupyter notebook [here](Fetch_Data_Quality_Checks.ipynb), which includes code and functions to identify data issues and a summary of findings across all three tables. In this step, I created two reusable functions to calculate the percentage of unique values and null values for any given DataFrame and columns. I also checked for inconsistencies within tables, such as cases where the purchased item count is greater than 0, but the item list is null.<br><br>
+
+📍📍**Forth Section: Communication with Stakeholders**<br><br>
