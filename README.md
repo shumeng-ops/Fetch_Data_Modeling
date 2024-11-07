@@ -49,4 +49,8 @@ I hope you’re doing well! I’m Shumeng, the analytics engineer on the [Team N
 While there are a few potential data quality issues—like duplicated User IDs, which I’ll be discussing with our engineering team—there are also a few areas where I think business context could help clarify what I’m seeing. If you have a moment, I’d love to connect and get your perspective.
 
 1. When users first sign up with Fetch, is “State” a required field? I’m noticing quite a few records where the State field is blank, and I’m wondering if this field might be optional during sign-up
-2. I noticed some records where the sign-up source is marked as null. Typically, I see “Email” or “Google” as the sources, but I’m curious if other methods—like phone number, Facebook, or any others—are also available and could explain these null values.
+2. What are the available sign-up sources for Fetch users? I currently see “Email,” “Google,” and some null values, so I’m wondering if the nulls might represent another sign-up method.
+3. For our brand records, what serves as the unique identifier? Is it the barcode or the brand code? Currently, neither appears to be unique for each brand ID. Additionally, there are many items in the receipts table with barcodes or brand codes that don’t exist in our brand table. This lack of completeness in our brand data could create challenges in data analysis.
+4. What does the CPG_ID and CPG_REF of a brand refers to in the business world?
+5. What are the rules for rewarding points for scanned receipts? I noticed that some receipts marked as “rejected” still show points awarded. Is that expected?
+6. Could you please explain the different stages of a receipt? I see stages like “submitted,” “pending,” “finished,” “flagged,” and “rejected.” Specifically, what does “finished” mean, and what’s the difference between “submitted” and “pending”?
